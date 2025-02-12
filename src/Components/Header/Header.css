@@ -1,0 +1,186 @@
+/* Header.css */
+
+header {
+            width: 100%;
+            background: linear-gradient(45deg, #1c4e8c, #336fb9); /* Gradient background for a lively look */
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            cursor: pointer;
+            font-family: 'Times New Roman', Times, serif;
+            /* height: 15vh; */
+            padding-left: 1rem;
+            padding-right: 1rem;
+            padding-top: 1rem;
+            font-size: .9rem;
+        }
+        
+        header button {
+            padding: .5rem;
+            border-radius: .5rem;
+            color: #e8b910;
+            background-color: rgb(255, 255, 255);
+            border: none;
+            font-weight: bold;
+           
+        }
+        
+        header button:hover {
+            color: #ffffff;
+            background-color: #11e671; /* Bright orange on hover */
+        }
+        
+        header img {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            /* padding: 10px 20px; */
+            position: relative;
+        }
+        
+       
+        
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            width: 100%;
+            position: relative;
+        }
+        
+        .nav-links button {
+            position: absolute;
+            right: 0;
+        }
+        
+        .nav-links ul {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            max-width: 600px;
+        }
+        
+        .nav-links li {
+            margin-left: 20px;
+            list-style: none;
+            /* padding: .5rem; */
+            font-weight: bold;
+        }
+        
+       
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+        .nav-links a:hover {
+            color: rgb(221, 228, 25);
+            
+        }
+        
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+            position: absolute;
+            right: 1rem;
+        }
+        
+        .side-drawer {
+            display: none;
+        }
+        
+        .side-drawer button {
+            position: absolute;
+            bottom: 1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+        
+            .menu-icon {
+                display: block;
+            }
+        
+            /* Side Drawer */
+            .side-drawer {
+                display: none;
+            }
+        
+            .side-drawer.open {
+                display: block;
+                position: fixed;
+                top: 0;
+                left: 0;
+                background: linear-gradient(45deg, #1c4e8c, #336fb9); /* Gradient background for a lively look */
+                width: 200px;
+                height: 100%;
+                padding: 20px;
+                z-index: 1000;
+                transform: translateX(0);
+                transition: transform 1s ease-in-out;
+            }
+        
+            .side-drawer ul {
+                list-style: none;
+                padding: 0;
+                width: 100%;
+            }
+        
+            .side-drawer li {
+                margin: 20px 0;
+                border: 1px solid white;
+                width: 100%;
+                padding: .5rem .5rem;
+                border-radius: .4rem;
+                font-weight: bold;
+            }
+        
+            .side-drawer a {
+                color: white;
+                text-decoration: none;
+            }
+        
+            .side-drawer li:hover {
+                background-color: #11e671; /* Side drawer hover effect */
+            }
+        
+            .nav-links.active {
+                display: flex;
+                flex-direction: column;
+                position: fixed;
+                top: 0;
+                left: 0;
+                background: linear-gradient(45deg, #1c4e8c, #336fb9); /* Gradient background for a lively look */
+                width: 200px;
+                height: 100%;
+                padding: 20px;
+                z-index: 1000;
+                transform: translateX(0);
+                transition: transform 0.3s ease-in-out;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            header img {
+                width: 80px;
+                height: 80px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            header img {
+                width: 60px;
+            }
+        }
+        

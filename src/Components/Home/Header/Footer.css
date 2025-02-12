@@ -1,0 +1,113 @@
+/* Footer.css */
+.footer {
+            background-color: #333333; /* Dark grey background for the footer */
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+          }
+          
+          .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            max-width: 1200px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+          }
+          
+          .footer-section {
+            flex: 1;
+            margin: 20px;
+            padding: 20px;
+            min-width: 250px;
+          }
+          
+          .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #ffcc00; /* Bright yellow accent for logo */
+          }
+          
+          .footer-section h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+          }
+          
+          .footer-section p {
+            font-size: 1rem;
+            line-height: 1.5;
+          }
+          
+          .footer-section .contact-info p {
+            font-size: 1.1rem;
+          }
+          
+          .footer-section .socials a {
+            display: inline-block;
+            margin: 10px 15px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+          }
+          
+          .footer-section .socials a:hover {
+            color: #ffcc00; /* Golden color for hover effect */
+          }
+          
+          .footer-section ul {
+            list-style-type: none;
+            padding: 0;
+          }
+          
+          .footer-section ul li {
+            margin: 10px 0;
+          }
+          
+          .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+          }
+          
+          .footer-section ul li a:hover {
+            text-decoration: underline;
+            color: #ffcc00; /* Hover color for links */
+          }
+          
+          .footer-bottom {
+            background-color: #222222; /* Slightly darker grey for the footer bottom */
+            padding: 15px;
+          }
+          
+          .footer-bottom p {
+            font-size: 1rem;
+            margin: 0;
+          }
+          
+          /* Responsive Styling */
+          
+          @media (max-width: 768px) {
+            .footer-content {
+              flex-direction: column;
+              text-align: center;
+            }
+          
+            .footer-section {
+              margin-bottom: 30px;
+            }
+          }
+          
+          @media (max-width: 480px) {
+            .footer-section .socials a {
+              font-size: 1rem;
+            }
+          
+            .footer-section ul li a {
+              font-size: 1rem;
+            }
+          }
+          

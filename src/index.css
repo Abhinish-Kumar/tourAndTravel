@@ -1,0 +1,12 @@
+body{
+margin:0;
+padding:0;
+}
+*,*::before,*::after{
+box-sizing: border-box;
+}
+
+body .headings,.para{
+            text-align: center;
+            padding: 1rem;
+}
