@@ -6,7 +6,7 @@ import "./TourBanner.css";
 const Slideshow = () => {
   const images = [
     "https://www.trolleytours.com/wp-content/uploads/2016/07/trolley-tours-of-key-west.jpg",  // Replace with your actual image paths
-    "https://thumbs.dreamstime.com/b/city-hall-tours-france-may-hotel-de-ville-built-architect-victor-laloux-jaures-square-128318367.jpg",
+    "https://dazzlingtravelplanners.com/wp-content/uploads/2019/10/4dbac764773354e75e44a66723c82b51-australia-pacific.jpg",
     "https://cdn.i-travelled.com/wp-content/uploads/2018/04/tours.jpg",
   ];
 
