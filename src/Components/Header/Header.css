@@ -2,14 +2,13 @@
 
 header {
             width: 100%;
-            background: linear-gradient(45deg, #1c4e8c, #336fb9); /* Gradient background for a lively look */
+            background: #007BFF;
             color: white;
             position: sticky;
             top: 0;
             z-index: 10;
             cursor: pointer;
             font-family: 'Times New Roman', Times, serif;
-            /* height: 15vh; */
             padding-left: 1rem;
             padding-right: 1rem;
             padding-top: 1rem;
@@ -20,15 +19,21 @@ header {
             padding: .5rem;
             border-radius: .5rem;
             color: #e8b910;
-            background-color: rgb(255, 255, 255);
+            background-color:#007BFF ;
+            border: 1px solid black !important;
             border: none;
             font-weight: bold;
            
         }
         
         header button:hover {
-            color: #ffffff;
-            background-color: #11e671; /* Bright orange on hover */
+            color: #007BFF ;
+            background-color: #fbfbfb; /* Bright orange on hover */
+        }
+        
+        header button:hover a{
+            color: #007BFF ;
+            background-color: #fbfbfb; /* Bright orange on hover */
         }
         
         header img {

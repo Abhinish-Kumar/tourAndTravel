@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";  // Import Link from react-router-dom
 import "./Header.css";
 
 function Header() {
@@ -21,25 +22,25 @@ function Header() {
         </div>
         <nav className="nav-links">
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><Link to="">Home</Link></li> {/* Updated to Link */}
+            <li><Link to="about">About</Link></li> {/* Updated to Link */}
+            <li><Link to="services">Services</Link></li> {/* Updated to Link */}
+            <li><Link to="contactUs">Contact</Link></li> {/* Updated to Link */}
           </ul>
           {/* Add Book Now button */}
-          <button className="book-now-btn">Book Now</button>
+          <button className="book-now-btn"><Link to="contactUs" >Book Now</Link></button>
         </nav>
       </div>
 
       <div className={`side-drawer ${drawerOpen ? "open" : ""}`}>
         <ul>
-          <li><a href="#home" onClick={toggleDrawer}>Home</a></li>
-          <li><a href="#about" onClick={toggleDrawer}>About</a></li>
-          <li><a href="#services" onClick={toggleDrawer}>Services</a></li>
-          <li><a href="#contact" onClick={toggleDrawer}>Contact</a></li>
+          <li><Link to="" onClick={toggleDrawer}>Home</Link></li> {/* Updated to Link */}
+          <li><Link to="about" onClick={toggleDrawer}>About</Link></li> {/* Updated to Link */}
+          <li><Link to="services" onClick={toggleDrawer}>Services</Link></li> {/* Updated to Link */}
+          <li><Link to="contactUs" onClick={toggleDrawer}>Contact</Link></li> {/* Updated to Link */}
         </ul>
         {/* Add Book Now button in the drawer */}
-        <button className="book-now-btn" onClick={toggleDrawer}>Book Now</button>
+        <button className="book-now-btn" onClick={toggleDrawer}><Link to="contactUs" >Book Now</Link></button>
       </div>
     </header>
   );
