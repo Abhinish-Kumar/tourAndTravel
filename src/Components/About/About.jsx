@@ -95,8 +95,7 @@ function About() {
       </section>
 
       <section className="contact-us">
-        <h2>Contact Us</h2>
-        <p>Got questions? We’re here to help! Reach out to us for any inquiries or to plan your next trip.</p>
+       
       <ContactUs/>
       </section>
     </div>
