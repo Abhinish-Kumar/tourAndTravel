@@ -13,7 +13,7 @@ function Header() {
     <header>
       <div className="navbar">
         <img
-          src="https://images.creativemarket.com/0.1.0/ps/7901653/1896/1265/m1/fpnw/wm0/creativee-05-.jpg?1583899424&s=efd648d56101ccf7b3c02c62e486b6cd"
+          src="./tourTravelLogo.jpeg"
           className="logo"
           alt="your logo"
         />
