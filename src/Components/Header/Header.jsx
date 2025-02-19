@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";  // Import Link from react-router-dom
 import "./Header.css";
+import logo from './tourTravelLogo.jpeg';
 
 function Header() {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -13,7 +14,7 @@ function Header() {
     <header>
       <div className="navbar">
         <img
-          src="./tourTravelLogo.jpeg"
+          src={logo}
           className="logo"
           alt="your logo"
         />
